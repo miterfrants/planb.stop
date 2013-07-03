@@ -1,0 +1,56 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/main.css" />
+        <script type="text/javascript" src="../js/lib/require.js"></script>
+        <script type="text/javascript">
+            require([
+               '../js/module/common.js',
+               '../js/lib/jquery-2.0.2.min.js'
+            ], function (common) {
+                $(document).ready(function(){common.onReady();});
+                $(window).bind("custom_load",function(e,common){
+                    setTimeout(function(){common.onLoad()},60);
+                })            
+                $(window).trigger("custom_load",common);
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="top-bar">
+            <div class="icon-logo"></div>
+            <div class="icon-config btn"></div>
+            <div class="member-nav btn">Login</div>
+        </div>
+        <div class="content browse float-fix">
+            <div class="title">Browse</div>
+            <div class="photo float-fix">
+                <div class="photo-item"></div>
+                <div class="photo-item"></div>
+                <div class="photo-item"></div>
+                <div class="photo-item"></div>
+                <div class="photo-item"></div>
+                <div class="photo-item"></div>
+            </div>
+            <div class="place">
+                <div class="pl-title">Waikiki Beach</div>
+                <div class="btn btn-pick">Pick</div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Term of Use<br/>
+            PlanB 2012-2013 All Right Reserved
+        </div>
+    </body>
+</html>
