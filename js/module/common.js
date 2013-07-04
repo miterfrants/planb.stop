@@ -1,5 +1,6 @@
 define(function () {
   return {
+      
     popupTimer:1,
     popupLogin:function(){
       var pop="<div class=\"tri-angle\"></div><ul class=\"popup-login\"><li class=\"icon-circle-fb btn\"></li><li class=\"icon-circle-google btn\"></li><li class=\"icon-circle-twitter btn\"></li></ul>";
